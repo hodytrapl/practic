@@ -1,0 +1,188 @@
+/* Для кнопок на главном */
+.style-red-button{
+    background-color: #E0001B;
+    color: white;
+}
+
+
+.sale{
+    color: #E0001B;
+}
+
+.notification{  
+    background-color: #E0001B;
+    color: white;
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+}
+
+/* Для иконок, не адаптивен*/
+img {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+/* классы */
+
+/* Для .top-header и его прямых детей */
+.top-header {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F8F8F8;
+    padding: 15px 30px;
+    height: 36px;
+    
+}
+
+.top-header > * {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 20px;
+    
+}
+
+/* Для кнопок в верхней части */
+.top-header .location,
+.top-header .clients,
+.top-header .phone {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+/*номер телефона на серой панельки*/
+.phone{
+ color:#696969;
+}
+
+/* Для .main-header */
+.main-header {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Для .header-main-row */
+.header-main-row {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 20px; /* Отступ между элементами */
+}
+
+/* Для компании*/
+.icon-company{
+    color: #E0001B;
+}
+
+/* Для контейнера поиска */
+.search-container {
+    display: flex;
+    flex-grow: 1;
+    max-width: 500px;
+    height: 32px;
+}
+
+/* Для элементов в .header-main-row */
+.search-container button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 0 16% 16% 0;
+    border: none;
+}
+
+
+/* Для элементов в .header-main-row */
+.header-main-row .personal-info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 16%;
+    border: none;
+    background: none;
+}
+
+.header-main-row .personal-info:hover{
+    background-color: #f0f0f0;
+} 
+
+
+
+/* Для .header-navigation */
+.header-navigation {
+    display: flex;  
+    align-items: center;
+    gap: 10px;
+    height: 48px;
+    padding: 0 20px;
+    
+}
+
+/* Для контейнера с кнопками внутри .header-navigation */
+.header-navigation > div {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+/* кнопки отделов */
+.header-navigation>div>button,
+.header-navigation>button {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    margin: 0;
+    border: none;
+    padding: 0 16px;
+    background: none;
+    color: inherit;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    white-space: nowrap;
+}
+
+.header-navigation>.style-red-button{
+    color: white;
+    background-color:#E0001B;
+    border-radius: 16% 0 0 16% ;
+}
+
+
+
+/* Для обычных кнопок (не красных) */
+.header-navigation > div > button {
+    background-color: #f0f0f0;
+}
+
+.header-navigation>div>button:last-child{
+    border-radius: 0 16% 16% 0 ;
+    color: #E0001B;
+}
+
+/* Для иконок внутри кнопок */
+.header-navigation button img {
+    width: 16px;
+    height: 16px;
+    margin: 0;
+}
+
+/* Для текста внутри кнопок */
+.header-navigation button p {
+    margin: 0;
+    line-height: 1;
+}
+
+/* Убираем перенос текста в кнопках */
+button p {
+    white-space: nowrap;
+}
