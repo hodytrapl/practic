@@ -103,13 +103,14 @@ img {
     display: flex;
     align-items: center;
     gap: 5px;
-    border-radius: 16%;
+    border-radius: 3%;
     border: none;
     background: none;
 }
 
 .header-main-row .personal-info:hover{
     background-color: #f0f0f0;
+    cursor: pointer;
 } 
 
 
@@ -151,10 +152,10 @@ img {
     white-space: nowrap;
 }
 
-.header-navigation>.style-red-button{
+.header-navigation>div>.style-red-button{
     color: white;
     background-color:#E0001B;
-    border-radius: 16% 0 0 16% ;
+    border-radius: 3% 0 0 3% ;
 }
 
 
@@ -165,7 +166,7 @@ img {
 }
 
 .header-navigation>div>button:last-child{
-    border-radius: 0 16% 16% 0 ;
+    border-radius: 0 3% 3% 0 ;
     color: #E0001B;
 }
 
