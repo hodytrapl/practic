@@ -1,0 +1,424 @@
+/*общее для сайта*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F9F9FA;
+}
+
+/*главный хедер, навигация по сайту*/
+
+.body-header{
+    background-color: #FFFFFF;
+}
+.body-header>div{
+    width: 1200px;
+    margin:0 auto;
+}
+
+.body-header-info{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    flex-wrap: wrap;
+}
+.body-header-info a{
+    color:#1C294D;
+    text-decoration: none;
+    display: inline-block;
+    align-items: center;
+    height: 24px;
+    font-size: 14px;
+    padding-left: 30px;
+}
+
+.body-header-info a img{
+    position:relative;
+    padding-right: 5px;
+    top:4px;
+}
+
+.info-left>a:first-child{
+    padding-left: 0;
+}
+
+.info-right .message{
+    font-weight: 500;
+}
+.info-right .phone{ 
+    font-weight: 500;
+}
+.info-right .phone-notification{
+    position:relative;
+    top:4px;
+    cursor:pointer;
+}
+
+.body-header-navigation {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+.navigation-userInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.navigation-userInfo > div:first-child {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.navigation-userInfo img[alt="лого-компании"] {
+    height: 40px;
+    width: auto;
+}
+
+.navigation-userInfo > div:first-child > div {
+    display: flex;
+    position: relative;
+}
+
+.navigation-userInfo  input[type="search"] {
+    padding: 10px 15px;
+    padding-right: 40px;
+    border: 1px solid #ddd;
+    border-radius: 6px 0 0 6px;
+    width: 300px;
+    font-size: 14px;
+}
+
+.navigation-userInfo  button[type="submit"] {
+    border: none;
+    border-radius: 0 6px 6px 0;
+    background-color: #FF7A00;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    align-items: center;
+}
+.navigation-userInfo  button[type="submit"]>img {
+    position:relative;
+    top:4px;
+}
+
+
+.navigation-userInfo > div:last-child nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+}
+
+.navigation-userInfo > div:last-child nav ul li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+}
+
+.navigation-userInfo > div:last-child nav ul li img {
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+}
+
+.navigation-userInfo > div:last-child nav ul li a {
+    text-decoration: none;
+    color:#1C294D;
+    font-weight: 500;
+    font-size: 14px;
+
+}
+
+.navigation-userInfo > div:last-child nav ul li span {
+    position: absolute;
+    top: -8px;
+    left: 12px;
+    background-color: #FF7A00;
+    color: white;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+}
+
+.navigation-userInfo > div:last-child nav ul li span p {
+    margin: 0;
+}
+
+
+.navigation-store ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+}
+
+.navigation-store ul li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+}
+
+.navigation-store ul li img {
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+}
+
+.navigation-store ul li a {
+    text-decoration: none;
+    color:#1C294D;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.navigation-store ul li .style-red-block{
+    color: red;
+}
+
+/*нижняя информация*/
+
+footer{
+    background-color: white;
+}
+
+footer>div:first-child{
+    background-color: #282F360A;
+}
+
+.footer-info-contact>div:first-child{
+    width: 1200px;
+    margin:0 auto;
+}
+
+footer>.footer-info-documents{
+    width: 1200px;
+    margin:0 auto;
+}
+
+.footer-info-contact{
+    background-color: #282F360A;
+    padding: 25px;
+}
+
+.footer-info-contact>div:first-child{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.footer-info-contact>div:first-child div{
+    display: flex;
+    position: relative;
+}
+
+.footer-info-contact>div:first-child input {
+    padding: 10px 15px;
+    padding-right: 40px;
+    border: 1px solid #ddd;
+    border-radius: 6px 0 0 6px;
+    width: 300px;
+    font-size: 14px;
+}
+
+.footer-info-contact>div:first-child button[type="submit"] {
+    border: none;
+    border-radius: 0 6px 6px 0;
+    background-color: #FF7A00;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    align-items: center;
+}
+.footer-info-contact>div:first-child button[type="submit"]>img {
+    position:relative;
+    top:4px;
+}
+
+.info-contact-media {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-contact-media ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+}
+
+.info-contact-media ul li{
+    border: 2px solid rgba(40, 47, 54, 0.15);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+
+/*таблица ссылок внизу*/
+.footer-tables-container {
+    display: flex;
+    width: 1200px;
+    margin: 35px auto;
+    flex-wrap: wrap;
+}
+.footer-tables-container>table {
+    margin-right:60px;
+}
+
+.footer-table {
+    margin-bottom: 20px;
+}
+
+.footer-table th {
+    font-size: 14px;
+    color: rgba(28, 41, 77, 1);
+    text-align: left;
+    font-weight: 600;
+    padding-bottom: 15px;
+    display: block;
+}
+
+.footer-table td {
+    padding: 3px 0;
+    display: block;
+}
+
+.footer-table a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(40, 47, 54, 0.8);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+    white-space: nowrap;
+}
+
+.footer-table tr:last-child td{
+    color: white;
+}
+
+/* Таблица с прайс-листом */
+.price-table {
+    width: 200px;
+}
+
+.price-table a {
+    display: flex;
+    align-items: flex-start;
+    padding: 12px 16px;
+    text-decoration: none;
+    color: rgba(28, 41, 77, 1);
+    transition: all 0.3s ease;
+    margin-top: 5px;
+}
+
+.price-table a:hover {
+    background-color: #e9ecef;
+    border-color: #FF7A00;
+}
+
+.price-table a span:first-child {
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.price-table a span:first-child img {
+    width: 24px;
+    height: 24px;
+}
+
+.price-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.price-text span:last-child {
+    font-size: 12px;
+    color: rgba(28, 41, 77, 0.6);
+    margin-top: 4px;
+}
+
+/* Таблица с контактами */
+.contact-table {
+    width: 200px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.contact-item:last-child {
+    margin-bottom: 0;
+}
+
+.contact-item img {
+    width: 20px;
+    height: 20px;
+    opacity: 0.7;
+}
+
+.contact-item a {
+    text-decoration: none;
+    color: rgba(28, 41, 77, 1);
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+
+/*таблица документов для юристов внизу*/
+
+.footer-info-documents{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 0;
+    flex-wrap: wrap;
+    left: 0;
+    border-top: 2px solid rgba(128, 128, 128, 0.1);
+}
+.footer-info-documents p{
+    color:rgba(28, 41, 77, 0.5);
+}
+.footer-info-documents>div{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    text-decoration: none;
+}
+
+.footer-info-documents div>a, .footer-info-documents div>p{
+    color: rgba(28, 41, 77, 0.8);
+    text-decoration: none;
+}

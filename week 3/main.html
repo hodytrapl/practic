@@ -4,219 +4,334 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="Assets/css/main.css">
+    <link rel="stylesheet" href="Assets/css/reset.css">
+    <link rel="stylesheet" href="Assets/css/main-page.css">
 </head>
 <body>
-    <header>
-        <div>
-            <div>
-                <div><img src="" alt="иконка-местоположения"><p>Москва</p></div>
-                <div><img src="" alt="иконка-работы"><p>Доставка и оплата</p></div>
-                <div><img src="" alt="иконка-времени"><p>Адрес и часы работы</p></div>
+    <!-- главная инфа сайта -->
+    <header class="body-header">
+        <div class="body-header-info">
+            <!-- для тех кто хочет найти нас-->
+            <div class="info-left">
+                <a href="" class="location"><img src="Assets/img/main-header/Icon-location.svg" alt="иконка-локации">Москва</a>
+                <a href="" class="delivery"><img src="Assets/img/main-header/Icon-delivery.svg" alt="иконка-доставки">Доставка и оплата</a>
+                <a href="" class="adderss-time"><img src="Assets/img/main-header/Icon-address-time.svg" alt="иконка-адрессов">Адрес и часы работы</a>
             </div>
-            <div>
-                <div><img src="" alt="иконка-почты"><p>market@estatut.ru</p></div>
-                <div><img src="" alt="иконка-телефона"><p>8 (968) 660-65-50</p><img src="" alt="иконка-#"></div>
+            <div class="info-right">
+                <a href="mailto:market@estatut.ru" class="message"><img src="Assets/img/main-header/Icon-message.svg" alt="иконка-почты">market@estatut.ru</a>
+                <a href="tel:89686606550" class="phone"><img src="Assets/img/main-header/Icon-phone.svg" alt="иконка-телефона">8 (968) 660-65-50</a>
+                <img src="Assets/img/main-header/Icon-notification.svg" alt="иконка-#" class="phone-notification">
             </div>
         </div>
-        <div>
-            <div>
-                <img src="Assets/images/logo.png" alt="лого-компании">
+        <hr>
+        <!-- меню -->
+        <div class="body-header-navigation">
+            <div class="navigation-userInfo">
                 <div>
-                    <input type="search" name="" id="">
-                    <button type="submit"></button>
+                    <img src="Assets/img/logo.png" alt="лого-компании">
+                    <div class="search">
+                        <input type="search" name="" id="" placeholder="Автор, название, ISBN">
+                        <button type="submit">
+                            <img src="Assets/img/main-header/Icon-search-loop.svg" alt="иконка-лупа">
+                            Искать
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <nav>
+                        <ul>
+                            <li><img src="Assets/img/main-header-nav/Icon-favorite.svg" alt="иконка-отложено"><a href="#">Отложено</a></li>
+                            <li><img src="Assets/img/main-header-nav/Icon-user.svg" alt="иконка-входа "><a href="#">Войти</a></li>
+                            <li><img src="Assets/img/main-header-nav/Icon-shopping.svg" alt="иконка-корзина"><span><p>10</p></span><a href="#">Корзина</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
-            <div>
-                <nav>
-                    <ul>
-                        <li><img src="" alt="иконка-отложено"><a href="#">Отложено</a></li>
-                        <li><img src="" alt="иконка-входа "><a href="#">Войти</a></li>
-                        <li><img src="" alt="иконка-корзина"><span><p>10</p></span><a href="#">Корзина</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <!-- главная навигация -->
+            <nav class="navigation-store">
+                <ul>
+                    <li><img src="Assets/img/main-header-nav/Icon-catalog.svg" alt="иконка-каталог"><a href="#">Каталог</a></li>
+                    <li><a href="#">Авторы</a></li>
+                    <li><a href="#">Новинки</a></li>
+                    <li><img src="Assets/img/main-header-nav/Icon-sale.svg" alt="иконка-скидки"><a href="#" class="style-red-block">Скидки</a></li>
+                    <li><a href="#">Партнёрам</a></li>
+                    <li><a href="#">Мы</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><img src="" alt="иконка-каталог"><a href="#">Каталог</a></li>
-                <li><a href="#">Авторы</a></li>
-                <li><a href="#">Новинки</a></li>
-                <li><img src="" alt="иконка-скидки"><a href="#">Скидки</a></li>
-                <li><a href="#">Партнёрам</a></li>
-                <li><a href="#">Мы</a></li>
-            </ul>
-        </nav>
     </header>
 
 
-
+    <!-- основное -->
     <main>
-        <div>
+        <div class="main-ads">
             <div>
-                <div>
-                    <aside>
-                        <p>2=3<span>на все книги</span></p>
-                    </aside>
-                </div>
-                <div>
-                    <aside>
+                <aside class="slider-ads">
+                    <div class="text-content">
+                        <p>2=3</p>
+                        <p>на все книги</p>
+                    </div>
+                    <div class="controls">
+                        <button class="prev">&lt;</button>
+                        <button class="next">&gt;</button>
+                    </div>
+                    <div class="indicators">
+                        <hr class="hr--active">
+                        <hr>
+                        <hr>
+                        <hr>
+                    </div>
+                </aside>
+                <div class="mini-ads">
+                    <aside class="ads">
                         <p>Бесплатно доставим ваш заказ при покупке от 2000 ₽</p>
-                        <img src="" alt="иконка-рекламы-1">
+                        <img src="Assets/img/ads/TDV_M46_03.png" alt="иконка-рекламы-1">
                     </aside>
-                    <aside>
+                    <aside class="ads">
                         <p>Скидка при регистрации до 15%</p>
-                        <img src="" alt="иконка-рекламы-2">
+                        <img src="Assets/img/ads/Illustration2.png" alt="иконка-рекламы-2">
                     </aside>
                 </div>
             </div>
 
-
-            <article>
+            <div class="main-books-ads">
                 <header>
-                    <div>
-                        <p>08:56:31</p>
-                    </div>
-                    <div>
-                        <img src="Assets/img/image 213.png" alt="иконка-товара">
-                    </div>
+                    <p>Книга дня</p>
+                    <p>08:56:31</p>
                 </header>
-                
-                <main>
-                    <p>Корпоративное право</p>
-                    <p>Инвестирование: способы, риски, субъекты : монография</p>
-                    <p>Майфат А.В.</p>
-                    <p>4450<span>₽</span></p>
-                    <div>
-                        <div><img src="" alt=""><p>4.9</p></div>
-                        <div><img src="" alt=""><p>89% рекомендуют</p></div>
-                    </div>
-                </main>
-                <footer>
-                    <button>
-                            <img src="" alt="">
-                            В корзину
-                        </button>
-                        <button>
-                            <img src="" alt="">
-                        </button>
-                </footer>
-            </article>
+                <!-- Блок с книгами которые выйшли -->
+                <section class="main-books-articles">
+                    <article>
+                        <img src="Assets/img/page-1/books/image 213.png" alt="">
+                        <p class="articles-misc">Корпоративное право</p>
+                        
+                        <h3>Инвестирование: способы, риски, субъекты : монография</h3>
+                        <p class="articles-authors">Майфат А.В.</p>
+                        <p class="articles-prices">4 450 <span>₽</span></p>
+                        <div class="articles-buy-buttons">
+                            <button><img src="Assets/img/main-header-nav/Icon-shopping.svg" alt="">В корзину</button>
+                            <button><img src="Assets/img/main-header-nav/Icon-favorite.svg" alt=""></button>
+                        </div>
+                    </article>
+                </section>
+            </div>
         </div>
 
-            <div>
+        <div class="main-books">
+            <header>
                 <p>Новые поступления</p>
-                <ol>
-                    <li>
-                        <article>
-                            <header>
-                                <div>
-                                    <p>08:56:31</p>
-                                </div>
-                                <div>
-                                    <img src="Assets/img/image 213.png" alt="иконка-товара">
-                                </div>
-                            </header>
-                            
-                            <main>
-                                <p>Корпоративное право</p>
-                                <p>Инвестирование: способы, риски, субъекты : монография</p>
-                                <p>Майфат А.В.</p>
-                                <p>4450<span>₽</span></p>
-                                <div>
-                                    <div><img src="" alt=""><p>4.9</p></div>
-                                    <div><img src="" alt=""><p>89% рекомендуют</p></div>
-                                </div>
-                            </main>
-                            <footer>
-                                <button>
-                                        <img src="" alt="">
-                                        В корзину
-                                    </button>
-                                    <button>
-                                        <img src="" alt="">
-                                    </button>
-                            </footer>
-                        </article>
-                    </li>
-                </ol>
-            </div>
+                <div>
+                    <div class="controls">
+                        <button class="prev">&lt;</button>
+                        <button class="next">&gt;</button>
+                    </div>
+                </div>
+                <hr>
+            </header>
+            <!-- Блок с книгами которые недавно вышли-->
+            <section class="main-books-articles">
+                <article>
+                    <div class="tags">
+                        <p>Бестселлер</p>
+                        <p>1+1=3</p>
+                    </div>
+                    <img src="Assets/img/page-1/books/image 213.png" alt="">
+                    <p class="articles-misc">Корпоративное право</p>
+                    
+                    <h3>Инвестирование: способы, риски, субъекты : монография</h3>
+                    <p class="articles-authors">Майфат А.В.</p>
+                    <p class="articles-prices">4 450 <span>₽</span></p>
+                    <div class="tags2">
+                        <p><img src="" alt="иконка-звезда">4.9</p>
+                        <p><img src="" alt="иконка-лайков">89% рекомендуют</p>
+                    </div>
+                    <div class="articles-buy-buttons">
+                        <button><img src="Assets/img/main-header-nav/Icon-shopping.svg" alt="">В корзину</button>
+                        <button><img src="Assets/img/main-header-nav/Icon-favorite.svg" alt=""></button>
+                    </div>
+                </article>
+                <article>
+                    <div class="tags">
+                        <p>Бестселлер</p>
+                        <p>1+1=3</p>
+                    </div>
+                    <img src="Assets/img/page-1/books/image 213.png" alt="">
+                    <p class="articles-misc">Корпоративное право</p>
+                    
+                    <h3>Инвестирование: способы, риски, субъекты : монография</h3>
+                    <p class="articles-authors">Майфат А.В.</p>
+                    <p class="articles-prices">4 450 <span>₽</span></p>
+                    <div class="tags2">
+                        <p><img src="" alt="иконка-звезда">4.9</p>
+                        <p><img src="" alt="иконка-лайков">89% рекомендуют</p>
+                    </div>
+                    <div class="articles-buy-buttons">
+                        <button><img src="Assets/img/main-header-nav/Icon-shopping.svg" alt="">В корзину</button>
+                        <button><img src="Assets/img/main-header-nav/Icon-favorite.svg" alt=""></button>
+                    </div>
+                </article>
+                <article>
+                    <div class="tags">
+                        <p>Бестселлер</p>
+                        <p>1+1=3</p>
+                    </div>
+                    <img src="Assets/img/page-1/books/image 213.png" alt="">
+                    <p class="articles-misc">Корпоративное право</p>
+                    
+                    <h3>Инвестирование: способы, риски, субъекты : монография</h3>
+                    <p class="articles-authors">Майфат А.В.</p>
+                    <p class="articles-prices">4 450 <span>₽</span></p>
+                    <div class="tags2">
+                        <p><img src="" alt="иконка-звезда">4.9</p>
+                        <p><img src="" alt="иконка-лайков">89% рекомендуют</p>
+                    </div>
+                    <div class="articles-buy-buttons">
+                        <button><img src="Assets/img/main-header-nav/Icon-shopping.svg" alt="">В корзину</button>
+                        <button><img src="Assets/img/main-header-nav/Icon-favorite.svg" alt=""></button>
+                    </div>
+                </article>
+            </section>
+            <hr>
+            <footer>
+                <a href="">Показать все книги раздела</a>
+            </footer>
+        </div>
 
-        <div>
+        <div class="main-newsletter">
             <p>Скидка 200 ₽ при подписке на рассылку Издательства</p>
-            <input type="email">
+            <input type="email" name="newsletter" id="" placeholder="Введите ваш Email">
             <button type="submit">Подписаться</button>
         </div>
 
-            <div>
-                <p>Готовятся к выходу</p>
-                <ol>
-                    <li>
-                        <article>
-                            <header>
-                                <div>
-                                    <p>08:56:31</p>
-                                </div>
-                                <div>
-                                    <img src="Assets/img/image 213.png" alt="иконка-товара">
-                                </div>
-                            </header>
-                            
-                            <main>
-                                <p>Корпоративное право</p>
-                                <p>Инвестирование: способы, риски, субъекты : монография</p>
-                                <p>Майфат А.В.</p>
-                                <p>4450<span>₽</span></p>
-                                <div>
-                                    <div><img src="" alt=""><p>4.9</p></div>
-                                    <div><img src="" alt=""><p>89% рекомендуют</p></div>
-                                </div>
-                            </main>
-                            <footer>
-                                <button>
-                                        <img src="" alt="">
-                                        В корзину
-                                    </button>
-                                    <button>
-                                        <img src="" alt="">
-                                    </button>
-                            </footer>
-                        </article>
-                    </li>
-                </ol>
-            </div>
+        <div class="main-books">
+            <header>
+                <p>Готовяться к выходу</p>
+                <div>
+                    <div class="controls">
+                        <button class="prev">&lt;</button>
+                        <button class="next">&gt;</button>
+                    </div>
+                </div>
+                <hr>
+            </header>
+            <!-- Блок с книгами которые скоро выйдут-->
+            <section class="main-books-articles">
+                <article>
+                    <div class="tags">
+                        <p>Бестселлер</p>
+                        <p>1+1=3</p>
+                    </div>
+                    <img src="Assets/img/page-1/books/image 213.png" alt="">
+                    <p class="articles-misc">Корпоративное право</p>
+                    
+                    <h3>Инвестирование: способы, риски, субъекты : монография</h3>
+                    <p class="articles-authors">Майфат А.В.</p>
+                    <p class="articles-prices">4 450 <span>₽</span></p>
+                    <div class="tags2">
+                        <p><img src="" alt="иконка-звезда">4.9</p>
+                        <p><img src="" alt="иконка-лайков">89% рекомендуют</p>
+                    </div>
+                    <div class="articles-buy-buttons">
+                        <button><img src="Assets/img/main-header-nav/Icon-shopping.svg" alt="">В корзину</button>
+                        <button><img src="Assets/img/main-header-nav/Icon-favorite.svg" alt=""></button>
+                    </div>
+                </article>
+                <article>
+                    <div class="tags">
+                        <p>Бестселлер</p>
+                        <p>1+1=3</p>
+                    </div>
+                    <img src="Assets/img/page-1/books/image 213.png" alt="">
+                    <p class="articles-misc">Корпоративное право</p>
+                    
+                    <h3>Инвестирование: способы, риски, субъекты : монография</h3>
+                    <p class="articles-authors">Майфат А.В.</p>
+                    <p class="articles-prices">4 450 <span>₽</span></p>
+                    <div class="tags2">
+                        <p><img src="" alt="иконка-звезда">4.9</p>
+                        <p><img src="" alt="иконка-лайков">89% рекомендуют</p>
+                    </div>
+                    <div class="articles-buy-buttons">
+                        <button><img src="Assets/img/main-header-nav/Icon-shopping.svg" alt="">В корзину</button>
+                        <button><img src="Assets/img/main-header-nav/Icon-favorite.svg" alt=""></button>
+                    </div>
+                </article>
+                <article>
+                    <div class="tags">
+                        <p>Бестселлер</p>
+                        <p>1+1=3</p>
+                    </div>
+                    <img src="Assets/img/page-1/books/image 213.png" alt="">
+                    <p class="articles-misc">Корпоративное право</p>
+                    
+                    <h3>Инвестирование: способы, риски, субъекты : монография</h3>
+                    <p class="articles-authors">Майфат А.В.</p>
+                    <p class="articles-prices">4 450 <span>₽</span></p>
+                    <div class="tags2">
+                        <p><img src="" alt="иконка-звезда">4.9</p>
+                        <p><img src="" alt="иконка-лайков">89% рекомендуют</p>
+                    </div>
+                    <div class="articles-buy-buttons">
+                        <button><img src="Assets/img/main-header-nav/Icon-shopping.svg" alt="">В корзину</button>
+                        <button><img src="Assets/img/main-header-nav/Icon-favorite.svg" alt=""></button>
+                    </div>
+                </article>
+            </section>
+            <hr>
+            <footer>
+                <a href="">Показать все книги раздела</a>
+            </footer>
+        </div>
 
-        <div>
+        <div class="list-garant">
             <ol>
                 <li>
-                    <img src="" alt="лого-горантов-1">
-                    <h2>Быстрая доставка</h2>
-                    <p>Доставим бесплатно от 2000 ₽ по всей России</p>
+                    <img src="Assets/img/page-1/garants/Icon-cloack.svg" alt="лого-горантов-1">
+                    <div>
+                        <h2>Быстрая доставка</h2>
+                        <p>Доставим бесплатно от 2000 ₽ по всей России</p>
+                    </div>
                 </li>
                 <li>
-                    <img src="" alt="лого-горантов-2">
+                    <img src="Assets/img/page-1/garants/Icon-eCard.svg" alt="лого-горантов-2">
+                    <div>
                     <h2>Безопасная оплата</h2>
                     <p>Плати безопасно и легко онлайн на нашем сайте.</p>
+                    </div>
                 </li>
                 <li>
-                    <img src="" alt="лого-горантов-3">
-                    <h2>Бонусная программа</h2>
-                    <p>Дополнительная скидка 15% при регистрации</p>
+                    <img src="Assets/img/page-1/garants/Icon-star.svg" alt="лого-горантов-3">
+                    <div>
+                        <h2>Бонусная программа</h2>
+                        <p>Дополнительная скидка 15% при регистрации</p>
+                    </div>
                 </li>
                 <li>
-                    <img src="" alt="лого-горантов-4">
-                    <h2>Большой выбор</h2>
-                    <p>Ежегодно выходит в свет более 100 книг</p>
+                    <img src="Assets/img/page-1/garants/Icon-backpack.svg" alt="лого-горантов-4">
+                    <div>
+                        <h2>Большой выбор</h2>
+                        <p>Ежегодно выходит в свет более 100 книг</p>
+                    </div>
                 </li>
             </ol>
         </div>
 
-        <div>
-            <p>Новости</p>
-            <button></button>
-            <section>
+
+        <div class="main-news">
+            <header>
+                <p>Новости</p>
+                <div>
+                    <div class="controls">
+                        <button class="prev">&lt;</button>
+                        <button class="next">&gt;</button>
+                    </div>
+                </div>
+                <hr>
+            </header>
+            
+            <section class="main-news-articles">
                 <article>
-                    <img src="Assets/img/image 214.png" alt="">
+                    <img src="Assets/img/page-1/news/image 214.png" alt="">
                     <p>16 июня 2020</p>
                     
                     <h3>Бесплатный онлайн-семинар. Доктрина stare decisis: борьба за прецедент в рос...</h3>
@@ -224,7 +339,7 @@
                     <button>читать</button>
                 </article>
                 <article>
-                    <img src="Assets/img/image 214.png" alt="">
+                    <img src="Assets/img/page-1/news/image 214.png" alt="">
                     <p>16 июня 2020</p>
                     
                     <h3>Бесплатный онлайн-семинар. Доктрина stare decisis: борьба за прецедент в рос...</h3>
@@ -232,7 +347,7 @@
                     <button>читать</button>
                 </article>
                 <article>
-                    <img src="Assets/img/image 214.png" alt="">
+                    <img src="Assets/img/page-1/news/image 214.png" alt="">
                     <p>16 июня 2020</p>
                     
                     <h3>Бесплатный онлайн-семинар. Доктрина stare decisis: борьба за прецедент в рос...</h3>
@@ -247,59 +362,126 @@
 
     <footer>
         <div>
-            <img src="" alt="лого-компании">
-            <div>
-                <input type="email" name="" id="">
-                <button type="submit"><img src="" alt=""></button>
-            </div>
-            <div>
-                <ul>
-                    <li><a href=""><img src="" alt="иконка-файсбука"></a></li>
-                    <li><a href=""><img src="" alt="иконка-инстаграма"></a></li>
-                    <li><a href=""><img src="" alt="иконка-твиттера"></a></li>
-                </ul>
+            <!-- Хранит компанию и подписку на почту-->
+            <div class="footer-info-contact">
+                <div>
+                    <img src="Assets/img/logo.png" alt="лого-компании">
+                    <div>
+                        <input type="email" name="sendSale" id="" placeholder="Введите свой Email и получите скидку">
+                        <button type="submit"><img src="Assets/img/main-footer/Icon-telegram.svg" alt="телеграм"></button>
+                    </div>
+                    <div class="info-contact-media">
+                        <ul>
+                            <li><a href=""><img src="Assets/img/main-footer/Icon-facebook.svg" alt="иконка-файсбука"></a></li>
+                            <li><a href=""><img src="Assets/img/main-footer/Icon-instagram.svg" alt="иконка-инстаграма"></a></li>
+                            <li><a href=""><img src="Assets/img/main-footer/Icon-twitter.svg" alt="иконка-твиттера"></a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <table>
-            <tr>
-                <th>Покупателям</th>
-                <th>Издательство</th>
-                <th>Книги</th>
-                <th>Прайс-лист</th>
-                <th>Телефон и Email</th>
-            </tr>
-            <tr>
-                <td>Наша почта</td>
-                <td>Оплата и доставка</td>
-                <td>Вопросы и ответы</td>
-            </tr>
-            <tr>
-                <td>О компании</td>
-                <td>Авторам</td>
-                <td>Вакансии</td>
-                <td>Контакты</td>
-            </tr>
-            <tr>
-                <td>Все категории</td>
-                <td>Бестселлеры</td>
-                <td>Новинки</td>
-                <td>Скидки и акции</td>
-            </tr>
-            <tr><a href="files/#" download="прайс-лист.pdf"><span><img src="" alt="иконка-файла"></span>Скачать прайс-лист<span>PDF, 12Mb</span></a></tr>
-            <tr>
-                <div><img src="" alt="иконка-почты"><p>market@estatut.ru</p></div>
-                <div><img src="" alt="иконка-телефона"><p>8 (968) 660-65-50</p></div>
-            </tr>
-        </table>
-        <div>
-            <p>© 2020 Издательство «Статут»</p>
-            <p>ул. Лобачевского, 92, корп. 2 119454, г. Москва</p>
-            <a href="">Политика Конфиденциальности</a>
-            <a href="">Договор оферты</a>
+        <div class="footer-tables-container">
+            <!-- Таблица 1: Покупателям, Издательство, Книги -->
+            <table class="footer-table">
+                <tr>
+                    <th>Покупателям</th>
+                </tr>
+                <tr>
+                    <td><a href="#" alt="Our email">Наша почта</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#" alt="Payment and delivery">Оплата и доставка</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#" alt="Questions and answers">Вопросы и ответы</a></td>
+                </tr>
+                <tr><td>a</td></tr>
+            </table>
+            
+            <table class="footer-table">
+                <tr>
+                    <th>Издательство</th>
+                </tr>
+                <tr>
+                    <td><a href="#" alt="About the company">О компании</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#" alt="For authors">Авторам</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#" alt="Vacancies">Вакансии</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#" alt="Contacts">Контакты</a></td>
+                </tr>
+            </table>
+            
+            <table class="footer-table">
+                <tr>
+                    <th>Книги</th>
+                </tr>
+                <tr>
+                    <td><a href="#" alt="All categories">Все категории</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#" alt="Bestsellers">Бестселлеры</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#" alt="New arrivals">Новинки</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#" alt="Discounts and promotions">Скидки и акции</a></td>
+                </tr>
+            </table>
+            
+            <!-- Таблица 2: Прайс-лист -->
+            <table class="footer-table price-table">
+                <tr>
+                    <th>Прайс-лист</th>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="files/#" download="прайс-лист.pdf" alt="Download price list">
+                            <span><img src="Assets/img/main-footer/Icon-file-Download.svg" alt="иконка-файла"></span>
+                            <span class="price-text">
+                                <span>Скачать прайс-лист</span>
+                                <span>PDF, 12Mb</span>
+                            </span>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+            
+            <!-- Таблица 3: Контакты -->
+            <table class="footer-table contact-table">
+                <tr>
+                    <th>Телефон и Email</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="contact-item">
+                            <img src="Assets/img/main-header/Icon-message.svg" alt="иконка-почты">
+                            <a href="mailto:market@estatut.ru" alt="Email address">market@estatut.ru</a>
+                        </div>
+                        <div class="contact-item">
+                            <img src="Assets/img/main-header/Icon-phone.svg" alt="иконка-телефона">
+                            <a href="tel:89686606550" alt="Phone number">8 (968) 660-65-50</a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
         </div>
-
+            <div class="footer-info-documents">
+                <p>© 2020 Издательство «Статут»</p>
+                <div>
+                    <p>ул. Лобачевского, 92, корп. 2 119454, г. Москва</p>
+                    <a href="#">Политика Конфиденциальности</a>
+                    <a href="#">Договор оферты</a>
+                </div>
+            </div>
     </footer>
+
+    <!-- если добавить функционал и подркуку с базы данных -->
     <script src="Assets/js/main.js"></script>
 </body>
 </html>
